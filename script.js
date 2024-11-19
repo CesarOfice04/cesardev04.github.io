@@ -22,7 +22,7 @@
         if (h3Index < h3Text.length) {
             h3.textContent += h3Text.charAt(h3Index); // Agrega un carácter
             h3Index++;
-            setTimeout(typeH3, 100); // Ajusta la velocidad de tecleo (en milisegundos)
+            setTimeout(typeH3, 50); // Ajusta la velocidad de tecleo (en milisegundos)
         } else {
             h3.classList.add('visible'); // Muestra el h3 después de escribir
         }
