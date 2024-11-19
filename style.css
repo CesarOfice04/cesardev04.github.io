@@ -118,17 +118,17 @@ video {
 }
 
 .font-h3 {
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin-left: 650px; /* Agrega un margen a la izquierda para separarlo del borde */
-    margin-top: -30px;
+    text-align: left; 
+    margin-left: 650px; 
+    margin-top: -30px; 
     font-family: "Gugi", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    color: white; /* Color del texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para resaltar */
-    opacity: 0; /* Oculta el h3 inicialmente */
-    transition: opacity 0.5s ease; /* Transición suave */
-    min-height: 1.5em; /* Ajusta según el tamaño de fuente para reservar espacio */
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    opacity: 1; /* Muestra el h3 desde el principio */
+    transition: opacity 0.5s ease;
+    min-height: 1.5em; /* Ajusta según el tamaño que necesites */
+    overflow: hidden; /* Evita que el texto se desborde */ 
 }
 
 .font-h3.visible {
