@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cesar Chiquito | Software Programmer</title>
-    
+    <title id="page-title">Cesar Chiquito | Software Programmer</title>
+    <script>
+        const translations = {
+            en: "Cesar Chiquito | Software Programmer",
+            es: "Cesar Chiquito | Programador de Software"
+        };
+
+        const userLang = navigator.language.startsWith('es') ? 'es' : 'en';
+        document.getElementById('page-title').innerText = translations[userLang];
+    </script>    
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +26,6 @@
         emailjs.init('g0liggak1ADrNmmIi');
     </script>
 
-<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     /* width */
@@ -42,8 +50,6 @@
       background: #190631; 
     }
     </style>
-    </head> 
-
 </head>
 
 <body>
@@ -57,9 +63,9 @@
             </li>
         </ul>
         <ul class="right font-ul-right" id="menu">
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about-me" data-lang-en="About me" data-lang-es="Sobre mí"></a></li>
+            <li><a href="#portfolio" data-lang-en="Portfolio" data-lang-es="Portafolio"></a></li>
+            <li><a href="#contact" data-lang-en="Contact" data-lang-es="Contacto"></a></li>
         </ul>
     </nav>
     
@@ -68,9 +74,9 @@
         <div class="menu-content">
             <span class="close-button">✖</span> <!-- Botón para cerrar -->
             <ul id="menu">
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about-me" data-lang-en="About me" data-lang-es="Sobre mí"></a></li>
+                <li><a href="#portfolio" data-lang-en="Portfolio" data-lang-es="Portafolio"></a></li>
+                <li><a href="#contact" data-lang-en="Contact" data-lang-es="Contacto"></a></li>
             </ul>
         </div>
     </div>
@@ -82,23 +88,25 @@
     </div>
     <header>
         <h1 class="font-h1">
-            <span class="color-i">I<span class="color-apostrophe">'</span><span class="color-m">M</span></span> 
+            <span class="color-i" data-lang-en="I'M" data-lang-es="SOY"></span>
             <span class="color-name">CESAR CHIQUITO</span>
         </h1>                
-        <h3 class="font-h3"><span>"Ready to develop your dreams."</span></h3>
-        <script src="https://cesarofice04.github.io/cesardev04.github.io/script.js"></script>
+        <h3 class="font-h3">
+            <span data-lang-en="Ready to develop your dreams." data-lang-es="Listo para desarrollar tus sueños."></span>
+        </h3>
         <a href="https://cesarofice04.github.io/cesardev04.github.io/CV.pdf" download>
-            <button class="btn-cv" type="button">Download CV</button>
+            <button class="btn-cv" type="button" data-lang-en="Download CV" data-lang-es="Descargar CV"></button>
         </a>
     </header>
 
     <section class="section" id="about-me">
-        <h2>ABOUT ME</h2>
+        <h2 data-lang-en="ABOUT ME" data-lang-es="SOBRE MÍ"></h2>
         <div class="container">
-        <img class="img-one" src="https://cesarofice04.github.io/cesardev04.github.io/img.jpeg" alt="Cesar Chiquito">
+            <img class="img-one" src="https://cesarofice04.github.io/cesardev04.github.io/img.jpeg" alt="Cesar Chiquito">
         </div>
-        <p class="p1 text-below">My name is Cesar Chiquito, and I am a Systems Engineer, graduated from UNEFA University. I have a strong passion for programming and have participated in system upgrade projects at Petroleos de Venezuela S.A.</p>
-        <p class="p2">With experience in various programming languages, such as:</p>
+        <p class="p1 text-below" data-lang-en="My name is Cesar Chiquito, and I am a Systems Engineer, graduated from UNEFA University. I have a strong passion for programming and have participated in system upgrade projects at Petroleos de Venezuela S.A." data-lang-es="Mi nombre es Cesar Chiquito, soy Ingeniero en Sistemas, graduado de la Universidad UNEFA. Tengo una gran pasión por la programación y he participado en proyectos de actualización de sistemas en Petróleos de Venezuela S.A."></p>
+        <p class="p2" data-lang-en="With experience in various programming languages and development tools, such as:" data-lang-es="Con experiencia en varios lenguajes de programación y herramientas de desarrollo, tales como:"></p>
+
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
@@ -137,70 +145,34 @@
                 <div class="slide">
                     <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (69).png" alt="">
                 </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (59).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (60).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (61).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (62).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (65).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (66).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (67).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (70).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (63).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (64).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (68).png" alt="">
-                </div>
-                <div class="slide">
-                    <img class="image" src="https://cesarofice04.github.io/cesardev04.github.io/img/pngegg (69).png" alt="">
-                </div>
             </div>
         </div>
-        <p class="p3">With the ability to develop intuitive and user-friendly projects, I focus on creating experiences that are accessible and enjoyable. My goal is to understand the needs of the end user, applying best practices in usability and design to provide effective and visually appealing solutions. I am committed to innovation and quality in every project.</p>
+        <p class="p3" data-lang-en="With the ability to develop intuitive and user-friendly projects, I focus on creating experiences that are accessible and enjoyable. My goal is to understand the needs of the end user, applying best practices in usability and design to provide effective and visually appealing solutions. I am committed to innovation and quality in every project." data-lang-es="Con la capacidad de desarrollar proyectos intuitivos y amigables para el usuario, me enfoco en crear experiencias que sean accesibles y agradables. Mi objetivo es entender las necesidades del usuario final, aplicando las mejores prácticas en usabilidad y diseño para proporcionar soluciones efectivas y visualmente atractivas. Estoy comprometido con la innovación y la calidad en cada proyecto."></p>
     </section>
     
     <section class="section" id="portfolio">
-        <h2>PORTFOLIO</h2>
-        <p class="p-port">Welcome to my portfolio, where I showcase programming projects that highlight my ability to create effective, user-centered solutions.</p>
+        <h2 data-lang-en="PORTFOLIO" data-lang-es="PORTAFOLIO"></h2>
+        <p class="p-port" data-lang-en="Welcome to my portfolio, where I showcase programming projects that highlight my ability to create effective, user-centered solutions." data-lang-es="Bienvenido a mi portafolio, donde muestro proyectos de programación que destacan mi capacidad para crear soluciones efectivas centradas en el usuario."></p>
     </section>
 
     <section class="section" id="contact">
         <div class="form-contain">
-            <h2>CONTACT ME</h2>
+            <h2 data-lang-en="CONTACT ME" data-lang-es="CONTACTAME"></h2>
             <form id="form">
                 <div class="form-group">
-                    <label class="label-input" for="name">Name:</label>
+                    <label class="label-input" for="name" data-lang-en="Name:" data-lang-es="Nombre:"></label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label class="label-input" for="email">Email:</label>
+                    <label class="label-input" for="email" data-lang-en="Email:" data-lang-es="Correo Electrónico:"></label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label class="label-input" for="message">Message:</label>
+                    <label class="label-input" for="message" data-lang-en="Message:" data-lang-es="Mensaje:"></label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" id="button" value="Send Email" class="submit-button">
+                    <input type="submit" id="button" value="Send Email" class="submit-button" data-lang-en="Send Email" data-lang-es="Enviar Correo"/>
                 </div>
             </form>
         </div>
@@ -208,7 +180,7 @@
 
     <section class="footer">
         <div class="footer-social">
-            <h2>Follow Me</h2>
+            <h2 data-lang-en="Follow Me" data-lang-es="Sígueme"></h2>
             <ul class="social-icons">
                 <li>
                     <a href="https://www.facebook.com/cesarluis.chiquitofierro/" target="_blank">
@@ -226,14 +198,11 @@
                     </a>
                 </li>
             </ul>
-            
         </div>
         <div class="footer-bottom">
-            <p class="p4">&copy; 2024 Cesar Chiquito. All rights reserved.</p>
+            <p class="p4" data-lang-en="&copy; 2024 Cesar Chiquito. All rights reserved." data-lang-es="&copy; 2024 Cesar Chiquito. Todos los derechos reservados."></p>
         </div>
-    </section>    
-
-    <script src="https://cesarofice04.github.io/cesardev04.github.io/script.js"></script>
+    </section>
     <script>
         // Ajustar la velocidad de reproducción a cámara lenta
         const video = document.getElementById('video');
