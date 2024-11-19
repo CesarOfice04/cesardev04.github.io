@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('.right a');
     const h3 = document.querySelector('.font-h3');
     const heading = document.querySelector('.font-h1');
@@ -27,7 +27,56 @@ document.addEventListener("DOMContentLoaded", function() {
             h3.classList.add('visible'); // Muestra el h3 después de escribir
         }
     }
+});*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('es') ? 'es' : 'en';
+
+    // Función para traducir el contenido
+    function translateContent() {
+        const elements = document.querySelectorAll('[data-lang-en], [data-lang-es]');
+        elements.forEach(el => {
+            el.textContent = el.getAttribute(`data-lang-${lang}`);
+        });
+    }
+
+    translateContent(); // Llama a la función de traducción
+
+    const links = document.querySelectorAll('.right a');
+    const h3 = document.querySelector('.font-h3');
+    const heading = document.querySelector('.font-h1');
+    const h3Text = h3.textContent; // Obtiene el texto del h3
+    h3.textContent = ''; // Limpia el contenido del h3
+    let h3Index = 0; // Índice para el texto del h3
+
+    h3.textContent = ' '; // Espacio vacío inicial
+
+    links.forEach((link, index) => {
+        setTimeout(() => {
+            link.classList.add('visible');
+            heading.classList.add('visible'); // Muestra el h1 al mismo tiempo que los enlaces
+            
+            // Inicia el efecto de tecleo para el h3
+            if (index === 0) { // Comienza el tecleo solo una vez
+                typeH3();
+            }
+        }, index * 500); // Ajusta el tiempo (en milisegundos) entre cada enlace
+    });
+
+    function typeH3() {
+        if (h3Index < h3Text.length) {
+            h3.textContent += h3Text.charAt(h3Index); // Agrega un carácter
+            h3Index++;
+            setTimeout(typeH3, 100); // Ajusta la velocidad de tecleo (en milisegundos)
+        } else {
+            h3.classList.add('visible'); // Muestra el h3 después de escribir
+        }
+    }
 });
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const img = document.querySelector('.img-one');
@@ -123,18 +172,4 @@ document.addEventListener('DOMContentLoaded', function() {
     downloadButton.addEventListener('mouseout', function() {
         this.classList.remove('tittle');
     });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const userLang = navigator.language || navigator.userLanguage; // Detecta el idioma del navegador
-    const lang = userLang.split('-')[0]; // Obtiene solo el idioma (sin región)
-    
-    const content = translations[lang] || translations['en']; // Usa inglés como predeterminado
-
-    document.title = content.title;
-    document.getElementById('about-me-title').innerText = content.aboutMe;
-    document.getElementById('portfolio-title').innerText = content.portfolio;
-    document.getElementById('contact-title').innerText = content.contact;
-    document.getElementById('portfolio-description').innerText = content.welcomeMessage;
-    // Continúa para otros elementos que necesiten traducción
 });
