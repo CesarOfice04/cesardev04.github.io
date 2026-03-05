@@ -674,7 +674,7 @@ textarea {
 
     .img-one {
         width: 100%; /* Ajusta el ancho de la imagen */
-        max-width:150px;
+        max-width:180px;
         margin-left: 0; /* Elimina el margen izquierdo */
         margin-bottom: 10px;
     }
@@ -813,3 +813,4 @@ textarea {
         margin-bottom: 30%;
     }
 }
+
