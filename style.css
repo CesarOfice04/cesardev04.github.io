@@ -257,8 +257,8 @@ button:hover {
 
 .img-one {
     width: 100%; /* Ajusta el ancho al 80% del contenedor */
-    max-width: 500px; /* Ancho máximo */
-    margin-left: 40px;
+    max-width: 350px; /* Ancho máximo */
+    margin-left: 180px;
     height: auto; /* Mantiene la proporción */
     border: 2px solid transparent; /* Borde inicial transparente */
     border-radius: 8px; /* Bordes redondeados */
@@ -328,6 +328,8 @@ button:hover {
 .portfolio-button:hover{
     background:#090f30;
 }
+
+
 
 section h2 {
     text-align: center; /* Centra el contenido del section */
@@ -588,7 +590,7 @@ textarea {
 
 .portfolio-project{
     width:95%;
-    margin: -150% auto 120px auto;
+    margin: -150% auto 50px auto;
 }
 
 .portfolio-description{
@@ -605,6 +607,7 @@ textarea {
 }
 
 }
+
 
 @media (max-width: 768px) {
     .menu-button {
@@ -671,6 +674,7 @@ textarea {
 
     .img-one {
         width: 100%; /* Ajusta el ancho de la imagen */
+        max-width:150px;
         margin-left: 0; /* Elimina el margen izquierdo */
         margin-bottom: 10px;
     }
@@ -756,6 +760,7 @@ textarea {
 
 }
 
+
 /* Para tabletas */
 @media (min-width: 769px) and (max-width: 1024px) {
     .font-h1 {
@@ -777,14 +782,14 @@ textarea {
         align-items: center; /* Centra verticalmente */
     }
     
-    .image-one {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%; /* Cambia a 100% para que la imagen llene el contenedor */
-        display: block;
-        object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
-    }    
+.img-one{
+    width:100%;
+    max-width:250px;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
 
     .section p {
         margin-left: 0;
@@ -808,8 +813,3 @@ textarea {
         margin-bottom: 30%;
     }
 }
-
-
-
-
-
