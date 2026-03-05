@@ -714,8 +714,8 @@ textarea {
         margin-bottom: 160%;
     }
 
-    #contact {
-        margin-top: 50px;
+    #contact {   
+        margin-top: -40px;
         padding: 10px; /* Ajusta el padding */
         margin-bottom: 0;
     }
@@ -813,4 +813,5 @@ textarea {
         margin-bottom: 30%;
     }
 }
+
 
