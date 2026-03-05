@@ -279,6 +279,56 @@ button:hover {
     background-color: #ffffff;
 }
 
+.portfolio-project{
+    width:420px;
+    margin:-650px auto 200px auto;
+    background:#ffffff;
+    border-radius:10px;
+    border:2px solid #090f30;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    transition:transform 0.3s ease;
+}
+
+.portfolio-project:hover{
+    transform:scale(1.03);
+}
+
+.portfolio-image{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.portfolio-description{
+    text-align:center;
+    padding:20px;
+}
+
+.portfolio-description .portfolio-text{
+    margin-left:0;
+    text-align:center;
+    font-size:16px;
+}
+
+.portfolio-button{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 25px;
+
+    background:linear-gradient(90deg,#005B7F,#006b95,#3c2b6e);
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+
+    font-family:"Chakra Petch", sans-serif;
+    font-weight:700;
+}
+
+.portfolio-button:hover{
+    background:#090f30;
+}
+
 section h2 {
     text-align: center; /* Centra el contenido del section */
     margin-bottom: 20px; /* Espacio entre el título y el párrafo */
@@ -534,6 +584,28 @@ textarea {
     display: none; /* Oculta el botón por defecto */
 }
 
+@media (max-width:768px){
+
+.portfolio-project{
+    width:95%;
+    margin: -150% auto 50px auto;
+}
+
+.portfolio-description{
+    padding:15px;
+}
+
+.portfolio-description .portfolio-text{
+    font-size:14px;
+}
+
+.portfolio-button{
+    padding:10px 20px;
+    font-size:14px;
+}
+
+}
+
 @media (max-width: 768px) {
     .menu-button {
         display: block; /* Muestra el botón en pantallas pequeñas */
@@ -663,6 +735,27 @@ textarea {
     }
 }
 
+@media (min-width:769px) and (max-width:1024px){
+
+.portfolio-project{
+    width:70%;
+    margin: -35% auto 50px auto;
+}
+
+.portfolio-description{
+    padding:18px;
+}
+
+.portfolio-description .portfolio-text{
+    font-size:15px;
+}
+
+.portfolio-button{
+    font-size:15px;
+}
+
+}
+
 /* Para tabletas */
 @media (min-width: 769px) and (max-width: 1024px) {
     .font-h1 {
@@ -715,3 +808,4 @@ textarea {
         margin-bottom: 30%;
     }
 }
+
