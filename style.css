@@ -817,11 +817,14 @@ textarea {
 /* Laptops / pantallas medianas */
 @media (min-width:1025px) and (max-width:1366px){
 
-.portfolio-project{
-    width: 60%;
-    margin: 5% auto 50px auto !important;
+.p-port{
+    margin-bottom:40px;
 }
 
+.portfolio-project{
+    width:60%;
+    margin:40px auto;
+}
 .portfolio-description{
     padding:20px;
 }
@@ -849,6 +852,7 @@ textarea {
 }
 
 }
+
 
 
 
