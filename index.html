@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Cesar Chiquito | Software Programmer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gugi&family=Ramabhadra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="png.png" type="image/x-icon">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            function initEmailJS() {
+                if (typeof emailjs !== 'undefined') {
+                    emailjs.init({ publicKey: 'g0liggak1ADrNmmIi' });
+                }
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initEmailJS);
+            } else {
+                initEmailJS();
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="left font-ul-left">
+            <li>
+                <h2>CESAR CHIQUITO</h2>
+            </li>
+        </ul>
+        <button class="menu-button" type="button" aria-label="Abrir menú">
+            <img src="img/menu.png" alt="" class="menu-icon">
+        </button>
+        <ul class="right font-ul-right" id="menu">
+            <li><a href="#about-me" data-lang-en="About me" data-lang-es="Sobre mí"></a></li>
+            <li><a href="#portfolio" data-lang-en="Portfolio" data-lang-es="Portafolio"></a></li>
+            <li><a href="#contact" data-lang-en="Contact" data-lang-es="Contacto"></a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <span class="close-button" role="button" aria-label="Cerrar menú">✖</span>
+            <ul id="mobile-menu">
+                <li><a href="#about-me" data-lang-en="About me" data-lang-es="Sobre mí"></a></li>
+                <li><a href="#portfolio" data-lang-en="Portfolio" data-lang-es="Portafolio"></a></li>
+                <li><a href="#contact" data-lang-en="Contact" data-lang-es="Contacto"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="form-container">
+            <video
+                class="hero-video"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="auto"
+                id="video"
+            >
+                <source src="movie/VIDEO-PORTAFOLIO.mp4" type="video/mp4">
+            </video>
+        </div>
+        <header>
+            <h1 class="font-h1">
+                <span class="color-i" data-lang-en="I'M" data-lang-es="SOY"></span>
+                <span class="color-name">CESAR CHIQUITO</span>
+            </h1>
+            <h3 class="font-h3">
+                <span data-lang-en="Ready to code your dreams." data-lang-es="Listo para codificar tus sueños."></span>
+            </h3>
+            <a href="CV.pdf" download>
+                <button class="btn-cv" type="button" data-lang-en="Download CV" data-lang-es="Descargar CV"></button>
+            </a>
+        </header>
+    </div>
+
+    <section class="section section-about" id="about-me">
+        <div class="about-wrap">
+            <h2 class="reveal" data-lang-en="ABOUT ME" data-lang-es="SOBRE MÍ"></h2>
+
+            <div class="about-card reveal reveal--delay-1">
+                <div class="about-row">
+                    <div class="about-photo">
+                        <img class="img-one" src="img.jpg" alt="Cesar Chiquito">
+                    </div>
+                    <div class="about-copy">
+                        <p class="p1" data-lang-en="My name is Cesar Chiquito, and I am a Systems Engineer, graduated from UNEFA University. I have a strong passion for programming and have participated in system upgrade projects at Petroleos de Venezuela S.A." data-lang-es="Mi nombre es Cesar Chiquito, soy Ingeniero de Sistemas, graduado de la Universidad UNEFA. Tengo una gran pasión por la programación y he participado en proyectos de actualización de sistemas en Petróleos de Venezuela S.A."></p>
+                        <p class="p2" data-lang-en="With experience in various programming languages and development tools, such as:" data-lang-es="Con experiencia en varios lenguajes de programación y herramientas de desarrollo, tales como:"></p>
+                    </div>
+                </div>
+
+                <div class="about-divider"></div>
+
+                <div class="skills-label" data-lang-en="Technologies & Tools" data-lang-es="Tecnologías y Herramientas"></div>
+
+                <div class="slider" id="skillsSlider">
+                    <div class="slide-track"></div>
+                </div>
+
+                <p class="p3" data-lang-en="With the ability to develop intuitive and user-friendly projects, I focus on creating experiences that are accessible and enjoyable. My goal is to understand the needs of the end user, applying best practices in usability and design to provide effective and visually appealing solutions. I am committed to innovation and quality in every project." data-lang-es="Con la capacidad de desarrollar proyectos intuitivos y amigables para el usuario, me enfoco en crear experiencias que sean accesibles y agradables. Mi objetivo es entender las necesidades del usuario final, aplicando las mejores prácticas en usabilidad y diseño para proporcionar soluciones efectivas y visualmente atractivas. Estoy comprometido con la innovación y la calidad en cada proyecto."></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="portfolio">
+        <h2 class="reveal" data-lang-en="PORTFOLIO" data-lang-es="PORTAFOLIO"></h2>
+
+        <p class="p-port portfolio-intro reveal reveal--delay-1"
+           data-lang-en="Welcome to my portfolio, where I showcase programming projects that highlight my ability to create effective, user-centered solutions."
+           data-lang-es="Bienvenido a mi portafolio, donde muestro proyectos de programación que destacan mi capacidad para crear soluciones efectivas centradas en el usuario.">
+        </p>
+
+        <article class="portfolio-project reveal reveal--delay-2">
+            <div class="portfolio-image-wrap">
+                <img
+                    src="proyecto-1.png"
+                    alt="Alfa Omega — Sitio web"
+                    class="portfolio-image"
+                >
+            </div>
+
+            <h3 class="portfolio-title">Alfa &amp; Omega | Sistema POS Ventas</h3>
+
+            <a
+                href="https://alfa-omega-web-site.great-site.net/"
+                class="portfolio-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-lang-en="View Project"
+                data-lang-es="Ver Proyecto">
+            </a>
+
+            <div class="portfolio-description">
+                <p class="portfolio-text">HTML • CSS • JavaScript • MySQL</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="section section-contact" id="contact">
+        <div class="contact-inner reveal">
+            <h2 data-lang-en="CONTACT ME" data-lang-es="CONTACTAME"></h2>
+            <p class="contact-lead" data-lang-en="Have a project in mind? Write to me." data-lang-es="¿Tienes un proyecto en mente? Escríbeme."></p>
+
+            <form id="form" class="contact-form">
+                <div class="form-group">
+                    <label class="label-input" for="name" data-lang-en="Name:" data-lang-es="Nombre:"></label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" data-placeholder-en="Your name" data-placeholder-es="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label class="label-input" for="email" data-lang-en="Email:" data-lang-es="Correo Electrónico:"></label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="label-input" for="message" data-lang-en="Message:" data-lang-es="Mensaje:"></label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." data-placeholder-en="Write your message here..." data-placeholder-es="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="button" value="Send Email" class="submit-button" data-lang-en="Send Email" data-lang-es="Enviar Correo"/>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-social reveal">
+            <h2 data-lang-en="Follow Me" data-lang-es="Sígueme"></h2>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/cesarluis.chiquitofierro/" target="_blank" rel="noopener noreferrer">
+                        <img class="image-footer" src="img-footer/pngegg (2).png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/CesarChiquitoF" target="_blank" rel="noopener noreferrer">
+                        <img class="image-footer" src="img-footer/pngegg (1).png" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/cesarchf_/" target="_blank" rel="noopener noreferrer">
+                        <img class="image-footer" src="img-footer/pngegg (3).png" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="p4" data-lang-en="&copy; 2026 Cesar Chiquito. All rights reserved." data-lang-es="&copy; 2026 Cesar Chiquito. Todos los derechos reservados."></p>
+        </div>
+    </section>
+
+    <div id="form-notification" class="form-notification" role="alert" aria-live="polite" hidden>
+        <div class="form-notification__icon" aria-hidden="true"></div>
+        <div class="form-notification__body">
+            <strong class="form-notification__title"></strong>
+            <p class="form-notification__message"></p>
+        </div>
+        <button type="button" class="form-notification__close" aria-label="Cerrar">&times;</button>
+    </div>
+
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Volver al inicio" data-lang-en="Back to top" data-lang-es="Volver al inicio" title="Volver al inicio">
+        <span class="back-to-top__arrow" aria-hidden="true">↑</span>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="slide.js"></script>
+    <script src="send.js"></script>
+</body>
+</html>
